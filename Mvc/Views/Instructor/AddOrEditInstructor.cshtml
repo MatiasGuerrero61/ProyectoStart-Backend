@@ -1,0 +1,33 @@
+﻿@model Mvc.Models.mvcInstructorModel
+@{
+    ViewBag.Title = "AddOrEditInstructor";
+}
+
+<h2>AddOrEditInstructor</h2>
+<div class="form-body">
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name)
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HireDate)
+            @Html.TextBoxFor(model => model.HireDate)
+            @Html.ValidationMessageFor(model => model.HireDate)
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn button" />
+            <input type="reset" value="Clear" class="btn button" />
+        </div>
+    }
+</div>
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval");
+}

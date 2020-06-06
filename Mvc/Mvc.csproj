@@ -123,6 +123,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstructorController.cs" />
@@ -194,10 +195,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
     <Content Include="Views\Student\AddOrEditStudent.cshtml" />
-    <Content Include="Views\Department\Index.cshtml" />
     <Content Include="Views\Department\AddOrEditDepartment.cshtml" />
     <Content Include="Views\Instructor\Index.cshtml" />
     <Content Include="Views\Instructor\AddOrEditInstructor.cshtml" />
+    <Content Include="Views\Department\Index.cshtml" />
+    <Content Include="Views\Course\Index.cshtml" />
+    <Content Include="Views\Course\AddOrEditCourse.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
